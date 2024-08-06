@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adidas">
+    <meta name="robots" content="index,follow">
+
+    <title>TechNova Solutions</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/main.js" defer type="module"></script>
+</head>
+
+<body>
+    <!-- circle  -->
+    <div id="stalker" class="absolute rounded-full z-5 shadow-3 events-none z-5"></div>
+
+    <!-- Icon WhatsApp -->
+    <a href="#"
+        target="_blank"> <img id="whatsApp" class="fixed pointer z-3 bottom-2 right-2 animation-whatsapp"
+            src="./src/img/whatsApp.png" alt="Whatsapp"></a>
+
+    <!-- mobile navbar  -->
+    <div class="fixed top-4 w-full z-1 top-0 const-second-navbar">
+        <div class="w-full relative h-full shadow-0">
+            <nav class="flex flex-col w-full items-center justify-center absolute bottom-0 p-1 gap-2 ">
+                <a href="#solutions" translate="ourSolutions" class="btn-navbar relative p-.5 border-none w-full text-start decoration-none text-black" ></a>
+                <a href="#contact" translate="contactUs" class="btn-navbar relative p-.5 border-none w-full text-start decoration-none text-black"></a>
+                <a href="#app" translate="ourApp" class="btn-navbar relative p-.5 border-none w-full text-start decoration-none text-black"></a>
+                <a href="/form-login.html" class="btn-login font-bold rounded-2 p-.5 w-full text-start decoration-none text-black" translate="login"></a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- descktop navbar -->
+    <div class="w-full fixed cont-navbar top-0 z-1 height-4rem shadow-0">
+        <div class="w-full h-full relative bg-white">
+            <nav class="flex w-full items-center justify-center absolute bottom-0 p-1">
+                <button class="absolute left-1 btn-list-navbar border-none text-2 pointer bi bi-list"></button>
+                <button class="nav-logo bg-center bg-no-repeat bg-cover rounded-full">
+                    <a href="#"></a>
+                </button>
+                <div class="cont-btns-nav gap-1 flex-1">
+                    <button class="btn-navbar relative p-.5 border-none">
+                        <a href="#solutions" translate="ourSolutions"></a>
+                    </button>
+                    <button class="btn-navbar relative p-.5 border-none">
+                        <a href="#contact" translate="contactUs"></a>
+                    </button>
+                    <button class="btn-navbar relative p-.5 border-none">
+                        <a href="#app" translate="ourApp"></a>
+                    </button>
+                </div>
+                <div class="cont-btns-nav gap-1">
+                    <a href="/form-login.html" class="pointer">
+                        <button class="btn-login font-bold rounded-2 p-.5 w-full shadow-1 pointer" translate="login"></button>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="w-full p-1 flex justify-center" id="solutions">
+            <div data-animate="bottom"
+                class="flex flex-col gap-1 rounded-2 cont-main-business p-1 w-full items-center shadow-2 max-w-default bg-gradient">
+                <div data-animate="left" class="w-full flex-2">
+                    <div class="flex flex-col items-center justify-center text-center cont-business gap-1">
+                        <h1>
+                            <span translate="businessCare"></span>
+                            <strong translate="businessCare2" class="text-white"></strong>
+                        </h1>
+                        <p translate="educationAdmin" class="text-white"></p>
+                        <div class="flex justify-center gap-2">
+                            <a href="#contact" >
+                                <button class="btn-default p-1 pointer font-bold rounded-2 shadow-1" translate="proposal"></button>
+                            </a>
+                            <a href="#contact"  >
+                                <button class="btn-default p-1 pointer font-bold rounded-2 shadow-1" translate="presentation"></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-animate="right" class="w-full flex-1 h-full">
+                    <div class="bg-content-business bg-center bg-no-repeat bg-cover text-center rounded-2 flex items-center justify-center w-full">
+                        <img src="./src/img/businessman.png" alt="Homem de negócios" class="bg-content-man">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center">
+            <div data-animate="bottom"
+                class="grid bg-gradient2 grid-infos w-full  relative p-1 items-center justify-center text-center gap-2 rounded-2 shadow-2 span-counter max-w-default">
+                <div class="card-info flex flex-col gap-.5 p-1">
+                    <p translate="benefitedStudents"></p>
+                    <span class="span-students"></span>
+                </div>
+                <div class="card-info flex flex-col gap-.5 p-1">
+                    <p translate="committedTeachers"></p>
+                    <span class="span-teachers"></span>
+                </div>
+                <div class="card-info flex flex-col gap-.5 p-1">
+                    <p translate="servedSchools"></p>
+                    <span class="span-schools"></span>
+                </div>
+                <div class="card-info flex flex-col gap-.5 p-1">
+                    <p translate="involvedParents"></p>
+                    <span class="span-parents"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center">
+            <div class="flex text-center max-w-default">
+                <h2 class="text-2" style="height: 4.5rem;">
+                    <span translate="connectWith" class="text-black"></span>
+                    <span id="dynamic-text" class="text-blue"></span>
+                </h2>
+            </div>
+        </section>
+
+        <section class="w-full p-1">
+            <div class="grid p-1 rounded-2 shadow-2 gap-2 bg-grid-cards bg-cover bg-center bg-no-repeat max-w-default m-auto">
+                <article data-animate="left"
+                    class="rounded-1 shadow-1 p-2 flex flex-col gap-1 text-center justify-center cards">
+                    <h3 translate="electronicSignature"></h3>
+                    <p translate="digitalSignatureTech"></p>
+                </article>
+                <article data-animate="bottom"
+                    class="rounded-1 shadow-1 p-1 flex flex-col gap-1 text-center justify-center cards">
+                    <h3 translate="automatedFinance"></h3>
+                    <p translate="automatedRemittances"></p>
+                </article>
+                <article data-animate="right"
+                    class="rounded-1 shadow-1 p-1 flex flex-col gap-1 text-center justify-center cards">
+                    <h3 translate="customReports"></h3>
+                    <p translate="personalizedReports"></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center">
+            <div class="grid p-1 rounded-2 gap-2 grid-contents max-w-default">
+                <article data-animate="bottom" class="flex flex-col items-center justify-center gap-2 article-grids p-1">
+                    <div class="flex flex-col gap-1 text-center">
+                        <h3 class="text-2 text-red" translate="successStory"></h3>
+                        <p class="text-gray" translate="journeyExcellence"></p>
+                    </div>
+                    <div>
+                        <img src="./src/img/tech-red.jpg" alt="Escada feita de livros"
+                            class="imgs-grid rounded-full shadow-1">
+                    </div>
+                </article>
+
+                <article data-animate="bottom"
+                    class="flex flex-col items-center justify-center gap-2 text-center pt-4 article-grids p-1">
+                    <div class="flex flex-col gap-1 text-center">
+                        <h3 class="text-2 text-green" translate="revealedSecret"></h3>
+                        <p class="text-gray" translate="agileQualityDeliveries"></p>
+                    </div>
+                    <div>
+                        <img src="./src/img/tech-green.jpg" alt="Alunos estudando"
+                            class="imgs-grid rounded-full shadow-1">
+                    </div>
+                </article>
+
+                <article data-animate="bottom"
+                    class="flex flex-col items-center justify-center gap-2 text-center article-grids p-1">
+                    <div class="flex flex-col gap-1 text-center">
+                        <h3 class="text-2 text-purple" translate="constantInnovation"></h3>
+                        <p class="text-gray" translate="DatawareInnovation"></p>
+                    </div>
+                    <div>
+                        <img src="./src/img/tech-purple.jpg" alt="Ambiente acadêmico"
+                            class="imgs-grid rounded-full shadow-1">
+                    </div>
+                </article>
+
+                <article data-animate="bottom"
+                    class="flex flex-col items-center justify-center gap-2 text-center pt-4 article-grids p-1">
+                    <div class="flex flex-col gap-1 text-center">
+                        <h3 class="text-2 text-blue" translate="quality"></h3>
+                        <p class="text-gray" translate="DatawareQuality"></p>
+                    </div>
+                    <div>
+                        <img src=" ./src/img/tech-blue.jpg" alt="Ambiente acadêmico"
+                            class="imgs-grid rounded-full shadow-1">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center" id="app">
+            <div
+                class="w-full p-1 flex flex-col gap-2 rounded-2 items-center justify-center shadow-2 cont-a-qrcode bg-center bg-no-repeat bg-cover max-w-default">
+                <a href="#" target="_blank"
+                    data-animate="left"
+                    class="flex-1 flex flex-col gap-1 rounded-2 shadow-1 p-2 text-center w-full items-center cont-qrcode decoration-none text-black text-1">
+                    <img src="./src/img/qrcode.png" alt="QRCODE Android">
+                    <p translate="downloadApp"></p>
+                    <p translate="readQRCode"></p>
+                </a>
+                <a href="#" target="_blank"
+                    data-animate="right"
+                    class="flex-1 flex flex-col gap-1 rounded-2 shadow-1 p-2 text-center w-full items-center cont-qrcode decoration-none text-black text-1">
+                    <img src="./src/img/qrcode.png" alt="QRCODE IOS">
+                    <p translate="downloadAppIOS"></p>
+                    <p translate="readQRCodeIOS"></p>
+                </a>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center">
+            <div class="w-full max-w-default flex flex-col gap-1 p-1 rounded-2">
+                <div class="w-full flex flex-col gap-2 p-1 cont-app-content">
+                    <div class="flex-1 flex flex-col gap-1" data-animate="top">
+                        <h2 class="text-blue text-2" translate="teacherApp"></h2>
+                        <ul class="flex flex-col gap-1">
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-blue" translate="classManagement"></strong>
+                                    <span class="text-1" translate="manageClasses"></span>
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-blue" translate="academicRecords"></strong>
+                                    <span class="text-1" translate="recordDetails"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-blue" translate="classSchedule"></strong>
+                                    <span class="text-1" translate="detailedClassInfo"></span>
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-blue" translate="parentCommunication"></strong>
+                                    <span class="text-1" translate="sendCommunications"></span>
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-blue" translate="tracking"></strong>
+                                    <span class="text-1" translate="monitorData"></span>    
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 w-full" data-animate="bottom">
+                        <div class="w-full text-center h-full flex items-center justify-center">
+                            <img src="./src/img/app-img-1.webp" alt="Sala de aula"
+                                class="w-full app-img rounded-1 shadow-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-2 p-1 cont-app-content">
+                    <div class="flex-1 flex flex-col gap-1" data-animate="bottom">
+                        <h2 class="text-purple text-2" translate="studentApp"></h2>
+                        <ul class="flex flex-col gap-1">
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-purple" translate="announcements"></strong>
+                                    <span class="text-1" translate="accessAnnouncements"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-purple" translate="academic"></strong>
+                                    <span class="text-1" translate="checkAbsencesGrades"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-purple" translate="tasks"></strong>
+                                    <span class="text-1" translate="completeAssignedTasks"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-purple" translate="menu"></strong>
+                                    <span class="text-1" translate="checkMenu"></span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 w-full" data-animate="top">
+                        <div class="w-full text-center h-full flex items-center justify-center">
+                            <img src="./src/img/app-img-2.webp" alt="Sala de aula"
+                                class="w-full app-img rounded-1 shadow-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col gap-2 p-1 cont-app-content">
+                    <div class="flex-1 flex flex-col gap-1" data-animate="top">
+                        <h2 class="text-green text-2" translate="guardianApp"></h2>
+                        <ul class="flex flex-col gap-1">
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-green" translate="financial"></strong>
+                                    <span class="text-1" translate="accessFinancialInfo"></span>
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-green" translate="dailyRoutine"></strong>
+                                    <span class="text-1" translate="describeDailyRoutine"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-green" translate="academic"></strong>
+                                    <span class="text-1" translate="monitorAcademicPerformance"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-green" translate="communication"></strong>
+                                    <span class="text-1" translate="directCommunication"></span>    
+                                </p>
+                            </li>
+                            <li class="list-none">
+                                <p>
+                                    <strong class="text-green" translate="photoAlbum"></strong>
+                                    <p class="text-1" translate="trackDailyRoutines"></p>    
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-1 w-full" data-animate="bottom">
+                        <div class="w-full text-center h-full flex items-center justify-center">
+                            <img src="./src/img/app-img-3.webp" alt="Sala de aula"
+                                class="w-full app-img rounded-1 shadow-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center mb-2" id="contact">
+            <div data-animate="bottom"
+                class="flex gap-1 rounded-2 p-1 w-full items-center shadow-2 max-w-default bg-gradient">
+                <div data-animate="right" class="w-full flex-1 h-full cont-img-woman flex items-center justify-center">
+                    <div
+                        class="bg-content-contact bg-center bg-cover bg-no-repeat text-center rounded-2 flex items-center justify-center text-center w-full h-full shadow-1">
+                        <img src="./src/img/businesswoman2.png" alt="Mulher de negócios" class="bg-content-woman">
+                    </div>
+                </div>
+                <div data-animate="left" class="w-full flex-1 p-1">
+                    <div class="flex flex-col items-center justify-center text-center cont-business gap-1">
+                        <h2 class="text-center text-white text-1.5" translate="talkToOurSpecialists"></h2>
+                        <form id="contactForm" class="flex flex-col gap-.5 form-contact p-1 rounded-1 shadow-1 w-full">
+                            <label for="name" class="text-start" translate="nameTranslations"></label>
+                            <input name="name" type="text" id="name" class="shadow-1 p-.5 border-none rounded-.5">
+                            <label for="email" class="text-start" translate="emailTranslations"></label>
+                            <input name="email" type="text" id="email" class="shadow-1 p-.5 border-none rounded-.5">
+                            <label for="phone" class="text-start" translate="cellphoneTranslations"></label>
+                            <input name="phone" type="text" maxlength="15" id="phone" class="shadow-1 p-.5 border-none rounded-.5">
+                            <label for="message" class="text-start" translate="messageTranslations"></label>
+                            <textarea name="message" id="message" rows="5"
+                                placeholder="Olá, gostaria de uma solução para..." class="shadow-1 border-none p-.5 rounded-.5" translate="solutionFor"></textarea>
+                            <div class="form-message p-.5 hide"></div>
+                            <button id="contactBtn" type="button" class="btn-default p-1 pointer font-bold rounded-2 shadow-1" translate="sendTranslations"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full p-1 flex justify-center mb-2">
+            <div class="w-full p-1 rounded-2 bg-white shadow-2 flex flex-col gap-2 cont-gen-partnes justify-center items-center max-w-default">
+                <div data-animate="top"
+                class="w-ft text-center p-1 bg-rgba-white rounded-1 shadow-1 gap-1 flex flex-col">
+                    <h2 translate="solidPartnership"></h2>
+                    <p translate="optimizeWorkload"></p>
+                </div>
+                <div class="w-ft cont-imgs-partnes grid gap-2 justify-center p-1 items-center bg-rgba-white rounded-1 shadow-1">
+                    <div class="flex-1 text-center" data-animate="card"><img src="./src/img/logo-apple.png" alt="logo Apple"></div>
+                    <div class="flex-1 text-center" data-animate="card"><img src="./src/img/logo-microsft.png" alt="logo parceiro"></div>
+                    <div class="flex-1 text-center" data-animate="card"><img src="./src/img/logo-aws.png" alt="logo parceiro"></div>
+                    <div class="flex-1 text-center" data-animate="card"><img src="./src/img/logo-android.webp" alt="logo parceiro"></div>
+                    <div class="flex-1 text-center" data-animate="card"><img src="./src/img/logo-google.png" alt="logo parceiro"></div>
+                    <div class="flex-1 text-center" data-animate="card"><img src="./src/img/logo-cisco.png" alt="logo parceiro"></div>
+                </div>    
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-black text-white footer" data-animate="bottom">
+        <div class="w-full p-2 flex flex-col gap-2">
+            <div class="flex w-full flex-col gap-1 cont-footer-content">
+                <div class="flex flex-1 flex-col gap-1 p-1 w-full">
+                    <h2 translate="customerService"></h2>
+                    <p translate="contactSupport"></p>
+                    <p translate="businessHours"></p>
+                    <p class="bi bi-whatsapp"> (99) 9999-9999</p>
+                    <p class="bi bi-envelope"> email@email.com.br</p>
+                </div>
+                <div class="flex flex-1 flex-col gap-1 p-1 w-full">
+                    <h2 translate="headquarters"></h2>
+                    <p>Avenida Brasil</p>
+                    <p>Rua Exemplo, 123</p>
+                    <p>São Paulo - SP, CEP: 01234-567</p>
+
+                    <div class="relative">
+                        <select id="input-set-language" class="bg-white text-black text-center p-.5 w-full max-w-15 pointer">
+                            <option value="0">English</option>
+                            <option value="1" selected>Português</option>
+                            <option value="2">Español</option>
+                        </select>
+                        <i class="bi bi-translate text-black left-1 absolute text-1.5"></i>
+    
+                    </div>
+
+                </div>
+                <div class="flex flex-2  flex-col gap-1 p-1 w-full">
+                    <h2 class="w-full text-center" translate="followNews"></h2>
+                    <div class="flex w-full text-2 gap-2 justify-center  p-1.5 items-center">
+                        <a target="_blank" href="#" class="text-white"><i
+                                class="bi bi-instagram"></i></a>
+                        <a target="_blank" href="#" class="text-white"><i
+                                class="bi bi-facebook"></i></a>
+                        <a target="_blank" href="#"
+                            class="text-white"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex w-full justify-around gap-1.5 cont-footer-last">
+                <a href="#" target="_blank"
+                    class="decoration-none text-white" translate="privacyPolicy"></a>
+                <a class="decoration-none text-white">&copy; 2024 <strong class="font-normal"></strong>
+                    <span translate="allRightsReserved"></span></a>
+                <a href="#contact" class="decoration-none text-white" translate="contactUs"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.form-contact {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form-contact input {
+    outline: none;
+    transition: all 0.2s ease;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+        background-color: #ebebeb;
+    }
+}
+
+.form-contact textarea {
+    outline: none;
+    transition: all 0.2s ease;
+    margin-bottom: 0.5rem;
+    resize: none;
+
+    &:hover {
+        background-color: #ebebeb;
+    }
+}
+
+.valid {
+    background-color: rgb(211, 253, 211);
+    color: var(--color1);
+    border: 1px solid rgb(0, 194, 0);
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.error {
+    background-color: rgb(255, 213, 213);
+    color: var(--color1);
+    border: 1px solid rgb(255, 0, 0);
+
+    &:hover {
+        background-color: transparent;
+    }
+}

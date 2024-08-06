@@ -1,0 +1,81 @@
+.text-dark-blue {
+    color: #00005e;
+}
+
+.text-1-2 {
+    font-size: 1.2rem;
+}
+
+.bg-black-rgba {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.body-form {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: blue;
+    background-image: url(../../../src/img/bg-login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-login {
+    max-height: 30rem;
+    max-width: 25rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.2s ease all;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.span-bar {
+    background-color: #00005e;
+    height: 2px;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.input-form-login {
+    padding-left: 2rem;
+    border: none;
+    border-bottom: solid 1px black;
+    outline: none;
+    background-color: transparent;
+}
+
+.input-container .input-form-login:focus+.span-bar {
+    width: 100%;
+}
+
+.link-pol {
+    transition: 0.2s ease all;
+    font-size: 0.8rem;
+
+    &:hover {
+        color: #00005e;
+    }
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    font-size: 10px;
+    opacity: 0.8;
+    pointer-events: none;
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(97vh);
+    }
+}

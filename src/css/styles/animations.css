@@ -1,0 +1,88 @@
+.animate-top {
+    animation: animatetop 1.5s ease;
+}
+
+@keyframes animatetop {
+    from {
+        transform: translateY(-45px);
+        opacity: 0.8
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1.5
+    }
+}
+
+.animate-right {
+    animation: animateright 1.5s ease;
+}
+
+@keyframes animateright {
+    from {
+        transform: translateX(45px);
+        opacity: 0.8
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1.5
+    }
+}
+
+.animate-bottom {
+    animation: animatebottom 1.5s ease;
+}
+
+@keyframes animatebottom {
+    from {
+        transform: translateY(45px);
+        opacity: 0.8
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1.5
+    }
+}
+
+.animate-left {
+    animation: animateleft 1.5s ease;
+}
+
+@keyframes animateleft {
+    from {
+        transform: translateX(-45px);
+        opacity: 0.8
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1
+    }
+}
+
+.animation-whatsapp {
+    animation: .8s whatsapp infinite alternate;
+} 
+
+@keyframes whatsapp {
+    100% {
+        bottom: 2.5rem;
+        transform: scale(1.05);
+    }
+}
+
+.animate-card {
+    animation: animateCard 1.5s ease;
+}
+
+@keyframes animateCard {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}

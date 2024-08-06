@@ -1,0 +1,338 @@
+main {
+    padding-top: 4rem;
+}
+
+.max-w-default {
+    max-width: 100rem;
+}
+
+.h-section {
+    min-height: 20vh;
+}
+
+.bg-gradient {
+    background: linear-gradient(to bottom, #a1a8fa, #549dfd, #022279);
+
+    @media screen and (width > 768px) {
+        background: linear-gradient(to right, #a1a8fa, #549dfd, #022279);
+    }
+}
+
+.bg-gradient2 {
+    background: linear-gradient(to bottom, #006eff, #0334bd);
+
+    @media screen and (width > 768px) {
+        background: linear-gradient(to left, #006eff, #0334bd);
+    }
+}
+
+.btn-default {
+    border: 1px solid var(--color2);
+    background-color: var(--color2);
+    color: var(--color3);
+    min-width: 8rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: transparent;
+        color: var(--color2);
+    }
+
+    &:hover a {
+        color: var(--color2);
+    }
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.cont-main-business {
+    padding-block: 2rem;
+
+    @media (width > 768px) {
+        flex-direction: row;
+    }
+}
+
+.cont-business {
+    & h1 {
+        font-size: 2.5rem;
+        max-width: 30rem;
+    }
+
+    & p {
+        max-width: 30rem;
+    }
+}
+
+.bg-content-business {
+    height: 20rem;
+    background-image: url(../../img/bg-1.jpg);
+    transition: all 0.2s ease;
+    
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.bg-content-man {
+    height: 115%;
+}
+
+/* ====================================================================================== */
+
+.grid-infos {
+    background-color: var(--color2);
+    transition: all 0.2s ease;
+
+    &:hover {
+        padding: 1.5rem;
+    }
+
+    @media (width > 640px) {
+        & {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (width > 768px) { 
+        & {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.card-info {
+    color: var(--color3);
+
+    & p {
+        font-size: 1rem;
+    }
+
+    & span {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+
+/* ============================================================================== */
+
+.bg-grid-cards {
+    background-image: url(../../img/bg-2.webp);
+    background-attachment: fixed;
+
+
+    @media screen and (width > 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.cards {
+    color: var(--color3);
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.2s ease all;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+/* ============================================================================================================================ */
+
+.cont-img-woman {
+    display: none;
+    transition: 0.2s ease all;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    @media screen and (width > 768px) {
+        & {
+            display: flex;
+        }
+    }
+}
+
+.bg-content-contact {
+    height: 30rem;
+    background-image: url(../../img/bg-1.jpg);
+
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-content-woman {
+    height: 120%;
+    transform: translateY(-30px);
+}
+
+/* ============================================================================================================================ */
+
+.grid-contents {
+    @media screen and (width > 640px) {
+        & {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (width > 1024px) {
+        & {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.text-red {
+    color: red;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-purple {
+    color: purple;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-gray {
+    color: #5a5a5a;
+}
+
+.article-grids {
+    border-bottom: 1px solid gray;
+
+    @media screen and (width > 640px) {
+        & {
+            border: none;
+        }
+
+        &:nth-child(2), &:nth-child(4) {
+            padding-top: 10rem;
+        }
+
+        &:nth-child(2), &:nth-child(4) {
+            border-right: none;
+            border-left: 1px solid gray;
+        }
+
+    }
+
+    @media screen and (width > 1024px) {
+        & {
+            border: none;
+        }
+
+        &:nth-child(2), &:nth-child(4) {
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+    }
+}
+
+.imgs-grid {
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* =================================================================================================================== */
+
+.cont-a-qrcode {
+    background-image: url(../../img/bg-login.jpg);
+    background-attachment: fixed;
+    padding-block: 5rem;
+
+    @media screen and (width > 640px) { 
+        & {
+            flex-direction: row;
+        }    
+    }
+}
+
+.cont-qrcode {
+    background-color: rgba(248, 248, 248, 0.9);
+    max-width: 20rem;
+    transition: 0.2s ease all;
+
+    & img {
+        max-width: 15rem;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+        background-color: rgba(248, 248, 248, 1);
+    }
+}
+
+/* ====================================== */
+
+.app-img {
+    max-width: 30rem;
+    transition: 0.2s ease all;
+    border-radius: 2rem 5rem 10rem 5rem;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.cont-app-content {
+    @media screen and (width > 768px) { 
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        & {
+            flex-direction: row;
+        }    
+    }
+}
+
+
+.cont-gen-partnes {
+    background-image: url(../../img/bg-login.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.cont-imgs-partnes {
+    max-width: 65rem;
+
+    & img {
+        width: 40%;
+        max-height: 6rem;
+        transition: 0.2s ease all;
+
+        &:hover {
+            transform: scale(1.1);
+            transform: translateY(-3px);
+        }
+    }
+
+    @media screen and (width > 640px) {
+        & {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.bg-rgba-white {
+    background-color: rgba(255, 2552, 255, 0.8);
+    backdrop-filter: blur(5px);
+}
+
+.w-ft {
+    width: fit-content;
+}

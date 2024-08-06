@@ -1,0 +1,77 @@
+@import url(./styles/classes.css);
+@import url(./styles/navbar.css);
+@import url(./styles/content.css);
+@import url(./styles/form.css);
+@import url(./styles/footer.css);
+@import url(./styles/animations.css);
+@import url(./styles/formLogin.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: black;
+    --color2: rgb(0, 55, 255);
+    --color3: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #435ac0;
+    border-radius: 5px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+
+    background-image: url(../img/confetti-doodles.svg);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ececec;
+        background-image: url(../img/endless-constellation.svg);
+    }
+
+    .const-second-navbar div nav,
+    .cont-navbar div nav {
+        background-color: #f3f3f3;
+    }
+}
+
+#stalker {
+    display: none;
+    width: 60px;
+    aspect-ratio: 1/1;
+    border: 1.5px solid #435ac0;
+    transition: width 0.2s ease;
+    transform: translate(-50%, -50%);
+
+    @media screen and (width > 1024px) {
+        & {
+            display: flex;
+        }
+    }
+}
+
+#whatsApp {
+    width: 3.5rem;
+}
