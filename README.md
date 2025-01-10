@@ -24,7 +24,7 @@ Este projeto é uma página web mobile-first e multilíngue projetada para ofere
 
 ## 🔧 **Como Executar o Projeto**
 
-<a href="https://vinicius-rodriguess.github.io/Elegant-Landing-Page/" target="_blank">Clique aqui para testar o projeto!</a>
+<a href="https://vinicius-rodriguess.github.io/Elegant-Landing-Page/src/" target="_blank">Clique aqui para testar o projeto!</a>
 
 <img src="./src/img/project-1.png"/>
 
